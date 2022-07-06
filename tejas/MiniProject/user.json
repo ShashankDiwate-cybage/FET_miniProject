@@ -1,0 +1,110 @@
+{
+  "User": [
+    {
+      "name": "Omkar",
+      "number": "9850784575",
+      "address": "Pune",
+      "profession": "Developer",
+      "email": "omkarks@cybage.com",
+      "password": "1234",
+      "id": 1
+    },
+    {
+      "name": "Akash",
+      "number": "7898654512",
+      "address": "Nagar",
+      "profession": "Dj",
+      "email": "akash@cybage.com",
+      "password": "1234",
+      "id": 2
+    },
+    {
+      "name": "praju",
+      "number": "07448140537",
+      "address": "at.post:Tarale,Tal:Patan, Dist:Satara",
+      "profession": "devloper",
+      "email": "suprabhap@cybage.com",
+      "password": "123",
+      "id": 3
+    },
+    {
+      "name": "aditya",
+      "number": "07448140537",
+      "address": "at.post:Tarale,Tal:Patan, Dist:Satara",
+      "profession": "devloper",
+      "email": "aditya@cybage.com",
+      "password": "123",
+      "id": 4
+    },
+    {
+      "name": "akash",
+      "number": "980280357",
+      "address": "sangli",
+      "profession": "devloper",
+      "email": "akashp@cybage.com",
+      "password": "123",
+      "id": 5
+    }
+  ],
+  "Artist": [
+    {
+      "name": "Manish",
+      "art": "Dance",
+      "gender": "m",
+      "number": "9850708475",
+      "email": "manish@cybage.com",
+      "password": "qwer",
+      "id": 1
+    },
+    {
+      "name": "Nitin",
+      "art": "Dance",
+      "gender": "m",
+      "number": "7845129865",
+      "email": "nitin@cybage.com",
+      "password": "1234",
+      "id": 2
+    },
+    {
+      "name": "suprabha",
+      "art": "singer",
+      "gender": "m",
+      "number": "744814053",
+      "email": "suprabhap@cybage.com",
+      "password": "123",
+      "id": 3
+    }
+  ],
+  "Upload": [
+    {
+      "name": "suprabha",
+      "file": "C:\\fakepath\\artregi.jpg",
+      "id": 1
+    },
+    {
+      "name": "praju",
+      "file": "C:\\fakepath\\logo2.jpg",
+      "id": 2
+    },
+    {
+      "name": "suprabha",
+      "file": "C:\\fakepath\\backRegi.jpg",
+      "id": 3
+    },
+    {
+      "name": "praju",
+      "file": "C:\\fakepath\\artregi.jpg",
+      "id": 4
+    },
+    {
+      "name": "praju",
+      "file": "C:\\fakepath\\kattk.jpg",
+      "id": 5
+    },
+    {
+      "name": "suprabha",
+      "file": "C:\\fakepath\\pexels-cottonbro-10667629.jpg",
+      "id": 6
+    }
+  ]
+}
