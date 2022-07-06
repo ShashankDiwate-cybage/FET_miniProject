@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="CSS/ruser.css" rel="stylesheet" type="text/css">
+    <!-- <script src="JS/"></script> -->
+    
+
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    
+    
+    <!-- CSS only -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+     <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css'>    
+    <script>
+        $(document).ready(
+            function()
+            {
+                 
+                    $.get("http://localhost:3000/Upload",
+                    
+                        function(data,status){
+                       console.log(status);
+                       console.log(data);
+                      for(i=0 ;i<data.length;i++)
+                      {
+                        let str=data[i].file;
+                        // let str2=str.splice(14)
+                        console.log(str);
+                        let str3=str.replace("C:\\fakepath\\", "./images/");
+                        console.log(str3);
+
+                        document.getElementById("pic").innerHTML+="<table style='border:2px solid red';border-radius:'5px';border-style:inset'><tr><th>ARTIST</th><th>ART</th><th>Description</th><th>Action</th><tr>"+
+                        "<tr><td>"+data[i].name+"</td><td><img style='height: 400px; width: 320px;' src='"+str3+"'</td><td>"+"</td><td>"+"<input type='button' onclick=del("+i+") value='remove'></td><tr></table>" ;
+           
+                    }});              
+            }
+        )
+    </script>
+<style>
+    #pic{
+        width: 70%;
+        height:30%;
+        display:grid;
+    }
+</style>
+</head>
+
+   
+<body>
+   
+             <div id="pic">
+
+             </div>
+    </body>
+</html>

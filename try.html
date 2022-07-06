@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link href="demo.css" type="text/css" rel="stylesheet">
+    <link href="login.css" type="text/css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+  $("#sub").click(function(){
+    
+    $.post("http://localhost:3000/employee",
+    {
+      name:$("#name").val(),
+      password:$("#pass").val(),
+      
+    },
+    function(data,status){
+      alert("Data: " + data + "\nStatus: " + status);
+    });
+  });
+});
+        </script>
+        <script>
+            $(document).ready(
+                function()
+                {
+                    $("#sub").click(function()
+                    {
+                        
+                        $.get("http://localhost:3000/employee",
+                        {
+                            name:$("#name").val(),
+      password:$("#pass").val(),
+                        },
+                        function(data,status){
+                           
+                            var flag=0;
+                          for(i=0 ;i<data.length;i++)
+                          {
+                             var obj=data[i];
+                             if(obj.name == name && obj.password == password)
+                             {
+                                flag=1;
+                                break;
+                             }
+                            
+
+
+                          }
+                           if(flag==1 )
+                           {
+                                 alert("login succsefully");
+                           }
+                           else
+                           {
+                            alert("login failed");
+                           }
+
+                                   
+                           
+                                       });
+                    **});
+                }
+            )
+        </script>
+</head>
+<body>
+    <div class="container">
+        <header></header>
+        <nav></nav>
+        <div id="div1">
+            
+               <center>
+            <table style="margin-top:75px ;"><th>Login</th>
+            <tr><td>UserName:</td><td><input type="text" id="username" style="height: 30px;" required ></td></tr>
+        <tr><td>Password:</td><td><input type="text" id="password" style="height: 30px;" required></td></tr>
+        <tr><td></td><td style="float: left;"><input type="button" id="sub" value="enter" style="height:30px ;width:60px; color:white; background-color: blue;"></td></tr></table>
+        
+    
+    </center>
+        </div>
+        
+        <footer></footer>
+        
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+
+#cf{
+    background-image: url("/images/wallpaper.jpg");
+    
+    background-repeat: no-repeat;
+            background-size: 50px;;
+            
+    
+    
+}
+
+
+input{
+    border: solid rgb(107, 18, 18);
+}
+
+#rbtn
+{
+    margin-left: 70px;
+}
+#forms
+{
+    margin-top: 20px;
+}
+#footer
+{
+    background-color: rgb(107, 18, 18);
+    height: 120px;
+}
+#logo
+{
+    
+    margin-left: 600px;
+    margin-top: 10px;
+  
+}
+label {
+    color: rgb(234, 231, 13);
+
+}
+#text
+{
+    margin-left: 450px;
+   
+    
+}
+
+#copyright
+{
+    margin-left: 580px;
+    color: rgb(27, 20, 8);
+}

@@ -1,0 +1,74 @@
+{
+  "User": [
+    {
+      "name": "akash",
+      "number": "980280357",
+      "address": "sangli",
+      "profession": "devloper",
+      "email": "akashp@cybage.com",
+      "password": "123",
+      "id": 5
+    }
+  ],
+  "Artist": [
+    {
+      "name": "Manish",
+      "art": "Dance",
+      "gender": "m",
+      "number": "9850708475",
+      "email": "manish@cybage.com",
+      "password": "qwer",
+      "id": 1
+    },
+    {
+      "name": "Nitin",
+      "art": "Dance",
+      "gender": "m",
+      "number": "7845129865",
+      "email": "nitin@cybage.com",
+      "password": "1234",
+      "id": 2
+    },
+    {
+      "name": "suprabha",
+      "art": "singer",
+      "gender": "m",
+      "number": "744814053",
+      "email": "suprabhap@cybage.com",
+      "password": "123",
+      "id": 3
+    }
+  ],
+  "Upload": [
+    {
+      "name": "suprabha",
+      "file": "C:\\fakepath\\artregi.jpg",
+      "id": 1
+    },
+    {
+      "name": "praju",
+      "file": "C:\\fakepath\\logo2.jpg",
+      "id": 2
+    },
+    {
+      "name": "suprabha",
+      "file": "C:\\fakepath\\backRegi.jpg",
+      "id": 3
+    },
+    {
+      "name": "praju",
+      "file": "C:\\fakepath\\artregi.jpg",
+      "id": 4
+    },
+    {
+      "name": "praju",
+      "file": "C:\\fakepath\\kattk.jpg",
+      "id": 5
+    },
+    {
+      "name": "Akash Jadhav",
+      "file": "C:\\fakepath\\arts.webp",
+      "id": 6
+    }
+  ]
+}
