@@ -1,0 +1,41 @@
+#nav1
+{
+    height: 50px;
+    text-align: center;
+    color: aliceblue;
+    
+    
+}
+
+#main
+{
+    background-image: url(../images/bg1.png);
+    background-repeat: no-repeat ;
+    background-size: cover;
+    height: 850px; 
+    color: black ;
+}
+#forms
+{
+    margin-top: 50px;
+    margin-top: 10px;
+}
+
+/* #logo
+{
+    
+    margin-left: 550px;
+    margin-top: 10px;
+  
+} */
+#text
+{
+    margin-left: 450px;
+    
+}
+h3{
+    color: aliceblue;
+    text-align: center;
+    margin-right: 1000px;
+}
+
