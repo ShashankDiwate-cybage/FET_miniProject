@@ -1,0 +1,62 @@
+#nav
+{
+    background-color: tan;   
+}
+.btn-group
+{
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+#searchbar
+{
+  margin-top: 15px;
+}
+
+
+
+
+
+#main
+{
+    background-color: rgb(221, 174, 224);
+}
+
+.img
+{
+  height: 540px;
+  width: 1000px;
+}
+
+ #main21
+ {
+  height: 540px;
+  width: 1000px;
+  border:2px solid;
+  margin-left: 110px;
+ }
+
+
+
+#footer
+{
+    background-color: rgb(41, 39, 39);
+    height: 120px;
+}
+#logo
+{
+    
+    margin-left: 700px;
+    margin-top: 10px;
+  
+}
+#text
+{
+    margin-left: 550px;
+    
+}
+#copyright
+{
+    margin-left: 680px;
+    color: aliceblue;
+}

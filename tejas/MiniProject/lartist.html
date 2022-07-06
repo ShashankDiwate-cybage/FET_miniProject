@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+    <link href="CSS/lartist.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="JS/lartist.js"></script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+
+    
+     <!-- CSS only -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+     <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css'>    
+
+<script>
+   $(document).ready(
+    function()
+    {
+        $("#register").click(
+            function(){
+                console.log("hii")
+        $.get("http://localhost:3000/Artist", 
+        function(data, status){
+            for(var i=0;i<data.length;i++)
+          {
+              var obj=data[i];
+              if(obj.email== $("#email").val() && obj.password ==$("#password").val())
+              {
+
+                console.log("ok")
+                // document.getElementById("show").innerHTML+="welcome to login page"
+                //window.location="http://127.0.0.1:5500/src/trial.html";
+                // && obj.password ==$("#name").val() 
+                location.replace("ArtistDashboard.html")
+    
+              }
+              else               if(obj.email== $("#email").val() && obj.password ==$("#password").val())
+
+                {
+                    alert("Invalid");
+                    // location.replace("lartist.html")
+
+                // document.getElementById("show").innerHTML+="welcome to login page"
+                //window.location="http://127.0.0.1:5500/src/trial.html";
+                // && obj.password ==$("#name").val() 
+                // location.replace("homePagePatient.html")
+                console.log("not ok")
+                
+              }
+          }})
+        });
+      });
+    
+</script>
+
+</head>
+<body>
+    <div class="container-fluid" id="cf">
+        
+
+        <!--Nav-->
+        <br>
+        <nav id="nav1" class="navbar navbar-dark bg-dark container-fluid  fixed-top" height="50px">
+            <!-- <img class="img-fluid" src="./images/logo2.jpg" height="30px" width="150px" display ="block" margin="auto">
+            ArtistMeet -->
+            <a class="navbar-brand" href="#">
+                <img src="./images/logo2.jpg" width="70" height="25" class="d-inline-block align-top" alt="">
+                Artist Login Page
+              </a>
+            
+            
+        
+    </nav>
+</div>
+    
+    
+
+       <!--Main-->
+
+       <main class="row" id="main">
+        <div class="col-sm-4">
+
+        </div>
+        <div class="col-sm-4" size="cover">
+            <br><br>
+            <form id="forms">
+                <div class="form-group" >
+                    <label for="email"  class="fw-bold" >Email address</label>
+                    <input type="email" class="form-control form-control-sm" id="email" placeholder="Enter email">
+                  </div>
+                  <div class="form-group">
+                    <label for="passwordl"  class="fw-bold">Password</label>
+                    <input type="password" class="form-control form-control-sm" id="password" placeholder="Password">
+                  </div>
+                  <button type="submit" class="btn btn-primary" id="register">Login</button>
+                  <button type="reset" class="btn btn-primary" id="reset">Reset</button>
+            </form>
+        </div>
+        <div class="col-sm-4">
+
+        </div>
+       </main>
+
+       
+       <!--Footer-->
+
+       <div >
+           <footer class="bg-dark text-center text-white " style="margin-top: 0%; margin-left:0%">
+           <!-- Grid container  -->
+           <div>
+               <!-- Section: Social media -->
+               <section class="mb-1">
+                   <!-- Facebook -->
+                   <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998;" href="https://www.facebook.com/"
+                       role="button" target="_blank"><i class='bi bi-facebook'></i></a>
+
+                   <!-- Twitter -->
+                   <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee;" href="https://www.twitter.com/"
+                       role="button" target="_blank"><i class="bi bi-twitter"></i></a>
+
+                   <!-- Google -->
+                   <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39;" href="https://www.google.com/"
+                       role="button" target="_blank"><i class="bi bi-google"></i></a>
+
+                   <!-- Instagram -->
+                   <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac;" href="https://www.instagram.com/"
+                       role="button" target="_blank"><i class="bi bi-instagram"></i></a>
+
+                   
+                   
+               </section>
+               <!-- Section: Social media -->
+           </div>
+           <!-- Grid container -->
+
+           <!-- Copyright -->
+           <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+               © 2020 Copyright:
+               <a class="text-white" href="#">ArtistMeet</a>
+           </div>
+           <!-- Copyright -->
+          </footer>
+          </div>
+          
+
+   
+
+
+
+
+    
+</body>
+</html>
